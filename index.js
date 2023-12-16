@@ -48,3 +48,43 @@
 //     parol = alert("Parol togri");
 // }
 
+
+
+// 5-task
+let n = parseInt(prompt("Enter n:"));
+let yigindi = 0;
+let counter = 0;
+let numberr = 2;
+
+while (counter < n) {
+  let isPrime = true;
+
+  for (let i = 2; i <= Math.sqrt(numberr); i++) {
+    if (numberr % i === 0) {
+      isPrime = false;
+      break;
+    }
+  }
+
+  if (isPrime) {
+    yigindi += numberr;
+    counter++;
+  }
+  numberr++;
+}
+
+console.log("Yigindi: ", yigindi);
+
+
+// // 6-task
+// function teskariTartib(son) {
+//     let teskari = parseInt(son.toString().split('').reverse().join(''));
+//     return teskari;
+// }
+
+// // Test
+// let berilganSon = 12345;
+// let teskariNatija = teskariTartib(berilganSon);
+// console.log(`Berilgan son: ${berilganSon}`);
+// console.log(`Teskari tartibdagi natija: ${teskariNatija}`);
+
